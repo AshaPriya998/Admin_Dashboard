@@ -1,0 +1,5 @@
+/* src/components/Chart.css */
+.chart-container {
+  position: relative;
+  height: 300px;
+}

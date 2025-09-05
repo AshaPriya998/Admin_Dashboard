@@ -1,0 +1,73 @@
+/* src/components/StatsCard.css */
+.stats-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.stats-info h3 {
+  color: #718096;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.stats-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #2d3748;
+}
+
+.stats-change {
+  font-size: 0.9rem;
+}
+
+.stats-change.positive {
+  color: #38a169;
+}
+
+.stats-change.negative {
+  color: #e53e3e;
+}
+
+.stats-icon {
+  font-size: 2.5rem;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Color variants */
+.stats-card.blue .stats-icon {
+  background: #bee3f8;
+  color: #3182ce;
+}
+
+.stats-card.green .stats-icon {
+  background: #c6f6d5;
+  color: #38a169;
+}
+
+.stats-card.purple .stats-icon {
+  background: #e9d8fd;
+  color: #805ad5;
+}
+
+.stats-card.yellow .stats-icon {
+  background: #fefcbf;
+  color: #d69e2e;
+}
